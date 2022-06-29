@@ -34,14 +34,18 @@
     margin: 7px 0;
   }
   
-  header nav ul li {
-    display: inline;
-  }
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
   
   header nav ul li a {
     margin: 0 30px;
     font-weight: lighter;
-    font-size: 22px;
+    font-size: 1.55vw;
   }
   
   /* HEADER / NAVBAR STYLES END */
@@ -55,6 +59,7 @@
     width: 100%;
     justify-content: space-between;
     flex-wrap: wrap;
+    display: flex;
   }
   
   footer h2 {
@@ -228,7 +233,7 @@ color: #fce138;
     justify-content: space-between;
   }
 
-  .step-img img b{
+  .step-img img b {
     max-width: 100%;
   }
 
@@ -292,11 +297,16 @@ color: #fce138;
   /* TRAINER STYLES END */
   
   /* REACH OUT STYLES START */
-  .contact-info {
+  .contact-info  {
 display: flex;
 justify-content: space-between;
 flex-wrap: wrap;
-  }
+}
+
+.contact-info  > * {
+flex: 1;
+margin: 15px;
+}
 
   .contact {
  background: #024e76;
@@ -336,7 +346,7 @@ flex-wrap: wrap;
     margin-top:  5px;
   }
 
-   .contact-form button, {
+   .contact-form button {
     width: 100%;
     border: none;
     background: #fce138;
